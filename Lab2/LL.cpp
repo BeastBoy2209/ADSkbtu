@@ -6,7 +6,6 @@ struct Node{
     int value;
     Node* nxt = NULL;
     
-    // Конструкторы
     Node(Node* next) : value(0), nxt(next) {}
     Node(int x) : value(x), nxt(nullptr) {}
     Node(int x, Node* next) : value(x), nxt(next) {}
