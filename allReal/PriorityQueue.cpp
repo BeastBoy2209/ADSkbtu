@@ -19,13 +19,10 @@ private:
 
     void heapifyDown(int i) {
         int largest = i;
-
         if (Left(i) < size() && heap[Left(i)] > heap[largest])
             largest = Left(i);
-
         if (Right(i) < size() && heap[Right(i)] > heap[largest])
             largest = Right(i);
-
         if (largest != i) {
             swap(heap[i], heap[largest]);
             heapifyDown(largest);

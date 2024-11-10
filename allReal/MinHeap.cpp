@@ -44,15 +44,6 @@ class MinHeap{
 };
 
 int main(){
-    MinHeap heap;
-    heap.insert(12);
-    heap.insert(19);
-    heap.insert(13);
-    heap.insert(3);
-    heap.insert(2);
-    heap.insert(12);
-    heap.insert(1123);
-    heap.insert(32);
-    heap.Heapify(6);
-    heap._out();
+    MinHeap heap123;
+    
 }
