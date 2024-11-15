@@ -1,8 +1,5 @@
-
 #include <iostream>
-#include <string>
 #include <vector>
-
 using namespace std;
 
 vector<int> prefix(string p){
@@ -23,19 +20,19 @@ vector<int> prefix(string p){
     return pref;
 }
 
-
-int main() {
-    int t; 
-    cin >> t;
-    while(t--) {
-        string s; 
-        cin >> s; 
-        int k; 
-        cin >> k; 
-        vector <int> pref = prefix(s); 
-        int minlen = s.size() - pref.back();
-        cout << minlen * (k - 1) + s.size() << endl;
-    }
+int main() { 
+    string s; 
+    cin >> s;
+    int cnt = 0;
+    vector <int> occurrences = prefix(s); 
+    for(int i = 1; i < occurrences.size(); i++) { 
+        if(i % 2 == 0) {
+            if((i / (i - occurrences[i - 1])) % 2 == 0) { 
+                cnt++; 
+            }
+        }
+    } 
+    cout << cnt << endl;
 
     return 0;
 }

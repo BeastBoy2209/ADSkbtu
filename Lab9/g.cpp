@@ -1,10 +1,7 @@
-
 #include <iostream>
-#include <string>
 #include <vector>
 
 using namespace std;
-
 vector<int> prefix(string p){
     int m = p.size();
     vector<int> pref(m);
@@ -23,19 +20,12 @@ vector<int> prefix(string p){
     return pref;
 }
 
-
 int main() {
-    int t; 
-    cin >> t;
-    while(t--) {
-        string s; 
-        cin >> s; 
-        int k; 
-        cin >> k; 
-        vector <int> pref = prefix(s); 
-        int minlen = s.size() - pref.back();
-        cout << minlen * (k - 1) + s.size() << endl;
-    }
+    string s; 
+    cin >> s;
+
+    vector <int> occurrences = prefix(s); 
+    cout << s.size() - occurrences.back() << endl; 
 
     return 0;
 }
