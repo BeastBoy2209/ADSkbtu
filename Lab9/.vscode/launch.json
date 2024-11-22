@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/beasty/Desktop/ADS/ADSkbtu/Lab9",
+      "program": "/Users/beasty/Desktop/ADS/ADSkbtu/Lab9/build/Debug/outDebug"
+    }
+  ]
+}
