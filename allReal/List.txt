@@ -1,6 +1,8 @@
-1. Linked lists ⛔️
-2. Doubly-Linked lists ⛔️
-3. Binary search ⛔️
+List by SYLLABUS
+
+1. Linked lists ✅
+2. Doubly-Linked lists ✅
+3. Binary search ✅
 4. Binary search tree ✅
 5. Priority queues ✅ 
 6. Heap ✅
@@ -15,7 +17,7 @@
 15. BFS ✅
 16. DFS ✅
 17. Topological Sort ✅
-18. Spanning tree algorithms (Kruskal, Prima) ⛔️
-19. Dijkstra ⛔️
+18. Spanning tree algorithms (Kruskal, Prima) ✅
+19. Dijkstra ✅
 20. Floyd ⛔️
-21. Ford Bellman ⛔️
+21. Ford Bellman ✅
